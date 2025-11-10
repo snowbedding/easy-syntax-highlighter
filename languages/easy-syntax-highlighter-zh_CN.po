@@ -1,0 +1,70 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Easy Syntax Highlighter 4.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/snowbedding/easy-syntax-highlighter\n"
+"Last-Translator: snowbedding & Gemini\n"
+"Language-Team: Chinese\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-11-09 20:57+0000\n"
+"PO-Revision-Date: 2025-11-09 20:57+0000\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.5\n"
+"X-Domain: easy-syntax-highlighter\n"
+
+#: src/core/AssetManager.php:82
+msgid "已复制！"
+msgstr "已复制！"
+
+#: src/core/AssetManager.php:83
+msgid "复制失败"
+msgstr "复制失败"
+
+#. Plugin Name of the plugin
+#: easy-syntax-highlighter.php
+#: src/admin/SettingsPage.php:109
+#: src/admin/SettingsPage.php:153
+msgid "Easy Syntax Highlighter"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: easy-syntax-highlighter.php
+msgid "https://github.com/snowbedding/easy-syntax-highlighter"
+msgstr ""
+
+#. Description of the plugin
+#: easy-syntax-highlighter.php
+msgid "A modern, lightweight, and powerful syntax highlighter for WordPress using Highlight.js. Completely rewritten for performance and extensibility."
+msgstr ""
+
+#. Author of the plugin
+#: easy-syntax-highlighter.php
+msgid "snowbedding"
+msgstr ""
+
+#. Author URI of the plugin
+#: easy-syntax-highlighter.php
+msgid "https://github.com/snowbedding"
+msgstr ""
+
+#: src/admin/Admin.php:33
+msgid "Settings"
+msgstr ""
+
+#: src/admin/SettingsPage.php:110
+msgid "Syntax Highlighter"
+msgstr ""
+
+#: src/admin/SettingsPage.php:156
+msgid "WordPress.org Plugin Page"
+msgstr ""
+
+#: src/admin/SettingsPage.php:159
+msgid "GitHub Repository"
+msgstr ""
+
+#: src/admin/SettingsPage.php:190
+msgid "All Themes"
+msgstr ""

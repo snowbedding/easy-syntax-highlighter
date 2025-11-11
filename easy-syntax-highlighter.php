@@ -1,17 +1,5 @@
 <?php
 /**
- * Easy Syntax Highlighter
- *
- * A modern, lightweight, and powerful syntax highlighter for WordPress using Highlight.js.
- * Completely rewritten for performance and extensibility.
- *
- * @package   EasySyntaxHighlighter
- * @author    snowbedding
- * @version   2.0.0
- * @license   GPL-2.0+
- * @link      https://github.com/snowbedding/easy-syntax-highlighter
- *
- * @wordpress-plugin
  * Plugin Name: Easy Syntax Highlighter
  * Plugin URI:  https://github.com/snowbedding/easy-syntax-highlighter
  * Description: A modern, lightweight, and powerful syntax highlighter for WordPress using Highlight.js. Completely rewritten for performance and extensibility.

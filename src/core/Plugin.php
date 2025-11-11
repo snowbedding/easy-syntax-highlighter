@@ -40,6 +40,34 @@ class Plugin {
 	protected $version;
 
 	/**
+	 * The asset manager for handling CSS/JS assets.
+	 *
+	 * @var      AssetManager    $asset_manager    Handles plugin assets.
+	 */
+	protected $asset_manager;
+
+	/**
+	 * The admin functionality handler.
+	 *
+	 * @var      \EasySyntaxHighlighter\Admin\Admin    $admin    Handles admin functionality.
+	 */
+	protected $admin;
+
+	/**
+	 * The settings page handler.
+	 *
+	 * @var      \EasySyntaxHighlighter\Admin\SettingsPage    $settings_page    Handles settings page.
+	 */
+	protected $settings_page;
+
+	/**
+	 * The classic editor integration handler.
+	 *
+	 * @var      \EasySyntaxHighlighter\Editor\ClassicEditor    $classic_editor    Handles classic editor integration.
+	 */
+	protected $classic_editor;
+
+	/**
 	 * Define the core functionality of the plugin.
 	 */
 	public function __construct() {
@@ -69,6 +97,7 @@ class Plugin {
 	 */
 	private function set_locale() {
 		$this->loader->add_action( 'plugins_loaded', $this, 'load_textdomain' );
+		$this->loader->add_filter( 'all_plugins', $this, 'translate_plugin_description' );
 	}
 
 	/**
@@ -78,8 +107,24 @@ class Plugin {
 		load_plugin_textdomain(
 			ESH_TEXT_DOMAIN,
 			false,
-			ESH_PLUGIN_DIR . 'languages/'
+			dirname( plugin_basename( ESH_PLUGIN_FILE ) ) . '/languages/'
 		);
+	}
+
+	/**
+	 * Translate plugin description in the plugins list page.
+	 *
+	 * @param array $plugins All plugins data.
+	 * @return array Modified plugins data with translated description.
+	 */
+	public function translate_plugin_description( $plugins ) {
+		$plugin_file = plugin_basename( ESH_PLUGIN_FILE );
+
+		if ( isset( $plugins[ $plugin_file ] ) ) {
+			$plugins[ $plugin_file ]['Description'] = __( 'A modern, lightweight, and powerful syntax highlighter for WordPress using Highlight.js.', ESH_TEXT_DOMAIN );
+		}
+
+		return $plugins;
 	}
 
 	/**

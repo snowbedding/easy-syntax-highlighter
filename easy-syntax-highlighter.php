@@ -39,7 +39,16 @@ spl_autoload_register(
 		}
 
 		$relative_class = substr( $class, $len );
-		$file           = $base_dir . strtolower( str_replace( '\\', '/', $relative_class ) ) . '.php';
+		
+		// Separate the class name from the namespace parts
+		$parts = explode( '\\', $relative_class );
+		$class_name = array_pop( $parts );
+		
+		// Convert namespace parts to lowercase for directory path
+		$namespace_path = strtolower( implode( '/', $parts ) );
+		
+		// Construct file path: src/lower/case/namespace/ClassName.php
+		$file = $base_dir . ( $namespace_path ? $namespace_path . '/' : '' ) . $class_name . '.php';
 
 		if ( file_exists( $file ) ) {
 			require $file;

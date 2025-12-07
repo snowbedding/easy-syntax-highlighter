@@ -33,6 +33,15 @@ class Plugin {
 	protected $plugin_name;
 
 	/**
+	 * Get the plugin name.
+	 *
+	 * @return string The plugin name.
+	 */
+	public function get_plugin_name() {
+		return $this->plugin_name;
+	}
+
+	/**
 	 * The current version of the plugin.
 	 *
 	 * @var      string    $version    The current version of the plugin.

@@ -19,7 +19,7 @@ namespace EasySyntaxHighlighter\Core;
 class Loader {
 
 	/**
-	g	 * The array of actions registered with WordPress.
+	 * The array of actions registered with WordPress.
 	 *
 	 * @var      array    $actions    The actions registered with WordPress to fire when the plugin loads.
 	 */

@@ -16,6 +16,16 @@ Modern, lightweight [syntax highlighter for WordPress](https://wordpress.org/plu
 - **Localization Ready**: Translation-ready with proper text domains
 - **Gutenberg Integration**: Seamless integration with the block editor
 
+## 📸 Screenshots
+
+| Settings & theme selector | Code block in editor |
+|---------------------------|----------------------|
+| ![Settings and theme selection](screenshot-1.jpg) | ![Code block in Gutenberg](screenshot-2.jpg) |
+
+| Frontend highlighting | Classic editor |
+|------------------------|----------------|
+| ![Syntax highlighting on frontend](screenshot-3.jpg) | ![TinyMCE code insertion](screenshot-4.jpg) |
+
 ## 📋 Requirements
 
 - **WordPress**: 5.0+

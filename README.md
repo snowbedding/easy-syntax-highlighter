@@ -1,6 +1,6 @@
 # Easy Syntax Highlighter (WordPress Plugin)
 
-Modern, lightweight syntax highlighter for WordPress using Highlight.js with support for multiple languages, themes, copy-to-clipboard functionality, and Gutenberg integration.
+Modern, lightweight [syntax highlighter for WordPress](https://wordpress.org/plugins/easy-syntax-highlighter/) using Highlight.js with support for multiple languages, themes, copy-to-clipboard functionality, and Gutenberg integration.
 
 ## ✨ Features
 
